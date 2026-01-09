@@ -1,0 +1,170 @@
+# =============================================================================
+# AGUI Desktop - .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Rust / Cargo
+# -----------------------------------------------------------------------------
+# Build artifacts
+/target/
+**/target/
+
+# Cargo.lock is tracked for binaries (this is an application, not a library)
+# Uncomment below if this becomes a library-only workspace:
+# Cargo.lock
+
+# Incremental compilation cache
+**/*.rs.bk
+
+# -----------------------------------------------------------------------------
+# IDE / Editors
+# -----------------------------------------------------------------------------
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (CLion, RustRover, IntelliJ)
+.idea/
+*.iml
+
+# Vim/Neovim
+*.swp
+*.swo
+*~
+.nvimrc
+.exrc
+
+# Emacs
+*~
+\#*\#
+.#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Helix
+.helix/
+
+# Zed
+.zed/
+
+# -----------------------------------------------------------------------------
+# Operating System
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# -----------------------------------------------------------------------------
+# Debug / Profiling
+# -----------------------------------------------------------------------------
+# Core dumps
+core
+*.core
+
+# Profiling data
+perf.data
+perf.data.old
+flamegraph.svg
+*.profraw
+*.profdata
+
+# Valgrind
+callgrind.out.*
+cachegrind.out.*
+massif.out.*
+
+# LLVM coverage
+coverage/
+*.lcov
+
+# -----------------------------------------------------------------------------
+# Testing / Benchmarks
+# -----------------------------------------------------------------------------
+# Criterion benchmark data (kept in target/ but just in case)
+criterion/
+
+# Test artifacts
+*.test
+test_output/
+
+# -----------------------------------------------------------------------------
+# Documentation Build
+# -----------------------------------------------------------------------------
+# Rustdoc output (usually in target/doc, but just in case)
+/doc/
+
+# mdBook output
+book/
+
+# -----------------------------------------------------------------------------
+# Environment / Secrets
+# -----------------------------------------------------------------------------
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Secret/credential files
+*.pem
+*.key
+*.crt
+secrets/
+
+# -----------------------------------------------------------------------------
+# Logs / Temporary Files
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# -----------------------------------------------------------------------------
+# Package Manager Artifacts
+# -----------------------------------------------------------------------------
+# npm (if any JS tooling)
+node_modules/
+package-lock.json
+
+# Python (if any Python tooling)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# -----------------------------------------------------------------------------
+# GPU / Graphics
+# -----------------------------------------------------------------------------
+# Shader compilation cache
+*.spv
+*.spirv
+
+# GPU debug dumps
+*.renderdoc
+*.rdc
+
+# -----------------------------------------------------------------------------
+# Binary / Asset Files (if generated)
+# -----------------------------------------------------------------------------
+# Generated binaries (outside target/)
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Generated icons/assets
+*.icns
+*.ico

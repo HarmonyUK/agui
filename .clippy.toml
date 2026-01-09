@@ -1,0 +1,17 @@
+# Clippy configuration for AGUI
+
+# Testing
+allow-expect-in-tests = true
+allow-unwrap-in-tests = true
+
+# Type complexity
+type-complexity-threshold = 500
+
+# Cognitive complexity
+cognitive-complexity-threshold = 30
+
+# Number of arguments
+too-many-arguments-threshold = 7
+
+# Recursion threshold
+single-char-binding-names-threshold = 4
