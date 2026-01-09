@@ -59,7 +59,7 @@ impl Version {
     pub const fn new() -> Self {
         Self {
             major: 0,
-            minor: 1,
+            minor: 3,
             patch: 0,
         }
     }
@@ -73,6 +73,6 @@ impl std::fmt::Display for Version {
 
 pub const VERSION: Version = Version {
     major: 0,
-    minor: 1,
+    minor: 3,
     patch: 0,
 };
